@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+상세 테스트 <br/>
+<table>
+    {% for fn in result %}
+    <tr>
+        <td>{{fn}}</td>
+        <td>{{result[fn]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

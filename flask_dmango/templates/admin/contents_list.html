@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+목록 (총: {{total}} 건)
+<table border="1">
+    <tr>
+        {% for fn in header %}
+        <td>{{fn}}</td>
+        {% endfor %}
+    </tr>
+    {% for row in result %}
+    <tr>
+        {% for fn in header %}
+        <td>
+            {% if fn == '_id' %}
+                <a target="_id" href="detail/{{row.get(fn)}}">{{row.get(fn)}}</a>
+            {% else %}
+                {{row.get(fn)}}
+            {% endif %}
+        </td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+{% for i in range(0, max_page) %}
+    <a href="?_page_num={{i+1}}">{{i+1}}</a>
+{% endfor%}
+
+</table>
+</body>
+</html>

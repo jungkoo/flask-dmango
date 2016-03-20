@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Dmango ADMIN 0.6 [deajang@gmail.com]</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Dmango Project</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">소개</a>
+        </li>
+        <li>
+          <a href="#basic">기본사용법</a>
+        </li>
+        <li >
+          <a href="#param">파라미터사용법</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Docs page layout -->
+ <div class="bs-header" id="content">
+  <div class="container">
+    <h1></h1>
+    <p>&nbsp;</p>
+  </div>
+</div>
+
+
+<!-- Docs page layout -->
+<div class="container">
+  <div class="col-md-9" role="main">
+        <div class="bs-docs-section">
+        <div class="page-header">
+            <h1>1. 소개</h1>
+        </div>
+        <p class="lead">MongoDB를 이용해 자유롭게 RESTful 방식으로 데이터를 저장/조회 해보세요.</p>
+        <h3>no code, no script !</h3>
+        <p>dmango는 복잡한 설정이 필요하지 않습니다. mongodb 접속정보만 넣어줘도 OK. </p>
+        <p>예약어 안내 :  $sort , $pagenum, $pagesize</p>
+
+        <div class="bs-docs-section">
+        <div class="page-header">
+            <h1 id="basic">2. 사용법</h1>
+        </div>
+        <p class="lead">
+            필요한 기능을 다음과 같이 호출해서 사용하세요.
+        </p>
+        <table class="table table-striped">
+            <tr>
+                <td>#</td>
+                <td>기능</td>
+                <td>URI</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>안내페이지(현재페이지)</td>
+                <td>{{prefix}}</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>파라미터테스트</td>
+                <td>{{prefix}}/_test?...</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Insert</td>
+                <td>{{prefix}}/{collection}/insert?...</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Remove</td>
+                <td>{{prefix}}/{collection}/remove?_id={_id}<br/>
+                    {{prefix}}/{collection}/remove?_id={_id1}&_id={_id2}
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Update</td>
+                <td>{{prefix}}/{collection}/update?_id={_id}&...</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Push</td>
+                <td>{{prefix}}/{collection}/push?_id={_id}&...</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Find</td>
+                <td>{{prefix}}/{collection}/find?...</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>List(html)</td>
+                <td>{{prefix}}/{collection}/list?...<br/>
+                    {{prefix}}/{collection}?...
+                </td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="bs-docs-section">
+        <div class="page-header">
+            <h1 id="param">3. 파라미터사용</h1>
+        </div>
+        <p class="lead">데이터의 조회와 입력을 특수 기능을 통해 조절이 가능합니다.</p>
+        <h4>a. 기본사용</h4>
+        <p>fieldname__method:type</p>
+</div>
+
+
+
+
+</body>
+</html>
