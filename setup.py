@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 setup(
     name='Flask-Dmango',
     version='0.0.3',
-    url='http://blog.indf.net/dmango',
+    url='https://github.com/jungkoo/flask-dmango',
     license='BSD',
     author='jeong mincheol',
     author_email='deajang@gmail.com',
