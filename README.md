@@ -6,6 +6,11 @@
 
 단, 0.0.3 버전에서는 admin기능은 개발되지 않았습니다.
 
+* install
+```
+pip install flask-dmango
+```
+
 
 ## 1. 소개
 
