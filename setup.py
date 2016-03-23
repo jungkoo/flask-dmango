@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 setup(
     name='Flask-Dmango',
-    version='0.0.3',
+    version='0.0.4',
     url='https://github.com/jungkoo/flask-dmango',
     license='BSD',
     author='jeong mincheol',
