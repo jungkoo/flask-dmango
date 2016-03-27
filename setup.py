@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 setup(
     name='Flask-Dmango',
-    version='0.0.5',
+    version='0.0.7',
     url='https://github.com/jungkoo/flask-dmango',
     license='BSD',
     author='jeong mincheol',
@@ -13,9 +13,7 @@ setup(
     packages=find_packages(),
     package_data={'':['templates/admin/*.html', 'templates/dmango/*.html']},
     install_requires=[
-        'Flask >= 0.',
-        'pymongo >= 3.2.2',
-        'Flask-PyMongo >= 0.3.0',
+        'Flask-PyMongo >= 0.4.1',
     ],
     classifiers=[
         'Environment :: Web Environment',
