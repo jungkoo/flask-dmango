@@ -139,9 +139,13 @@ class DmangoEngine:
         else:
             return self.__connection[_db_name][_cn_name]
 
-    def find(self, match, sort=None, start_idx=0, end_idx=20, fields=None):
+    def find(self, match={}, sort=None, start_idx=0, end_idx=20, fields=None):
         c = self.collection
-        c = c.find(match, fields=fields if fields else None)
+
+        if fields:
+            fields = {f:True for f in fields}
+
+        c = c.find(match, projection=fields)
 
         if not c:
             return list()
