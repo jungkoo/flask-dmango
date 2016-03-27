@@ -142,8 +142,10 @@ class DmangoEngine:
     def find(self, match={}, sort=None, start_idx=0, end_idx=20, fields=None):
         c = self.collection
 
-        if fields:
+        if fields and len(fields) > 0:
             fields = {f:True for f in fields}
+        else:
+            fields = None
 
         c = c.find(match, projection=fields)
 
