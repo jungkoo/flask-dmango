@@ -162,7 +162,7 @@ class DmangoEngine:
             c = c[start_idx:]
         return c
 
-    def find_one(self, match, sort=None, fields=None):
+    def find_one(self, match={}, sort=None, fields=None):
         c = self.collection
         c = c.find_one(match, fields=fields if fields else None)
         if sort:
@@ -200,7 +200,7 @@ class DmangoEngine:
             del row[u'_id']
         return rv
 
-    def count(self, match):
+    def count(self, match={}):
         c = self.collection
         c = c.find(match).count()
         return c
